@@ -16,19 +16,35 @@
     </div>
 
     <form id="orderForm">
-      <input type="checkbox" name="pizzaTopping" value="mushrooms">Mushrooms<br>
-      <input type="checkbox" name="pizzaTopping" value="spinach">Spinach<br>
-      <input type="checkbox" name="pizzaTopping" value="garlic">Garlic<br>
-      <input type="checkbox" name="pizzaTopping" value="pineapple">Pineapple<br>
 
-      <button type="submit" class="btn btn-info">Submit My Order!</button>
+      <div class="topping">
+        <h2>Select the goods!</h2>
+        <input type="checkbox" name="pizzaTopping" value="mushrooms">Mushrooms<br>
+        <input type="checkbox" name="pizzaTopping" value="spinach">Spinach<br>
+        <input type="checkbox" name="pizzaTopping" value="garlic">Garlic<br>
+        <input type="checkbox" name="pizzaTopping" value="pineapple">Pineapple<br>
+      </div>
+      <br>
 
+      <div class="size">
+        <h2>What size za?</h2>
+        <select class="form-control btn-success" id="size">
+          <option>Small</option>
+          <option>Large</option>
+        </select>
+      </div>
 
-
+      <button id="submit" type="submit" class="btn btn-info">Submit My Order!</button>
     </div>
-    </form>
+  </form>
+  <br>
+
+  <div class="card bg-info orderOutput">
+    <h2>Your Order</h2>
+    You ordered a <span id="sizeOutput"></span> pizza with <span id="toppingsOutput"></span>. That sounds so delicious. The total cost comes to: <span id="costOutput"></span>!
 
   </div>
-  <p id="jf">jf</p>
+</div>
+<p id="jf">jf</p>
 </body>
 </html>

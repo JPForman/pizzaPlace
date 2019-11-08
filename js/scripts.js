@@ -1,10 +1,16 @@
 function Pizza (size, toppings) {
   this.size = size;
   this.toppings = toppings;
-  // this.price = 0;
+  this.price = 0;
 }
 
-
+Pizza.prototype.calcPrice = function() {
+  this.toppings.forEach(function(topping) {
+    this.price += 1;
+    console.log(this.price);
+  })
+  // return this;
+}
 
 
 
@@ -20,7 +26,8 @@ $(document).ready(function() {
     event.preventDefault();
     let toppingInputs = $("input:checkbox[name=pizzaTopping]:checked");
     let toppingsArray = [];
-    let sizeInput = "small";
+    let sizeInput = $("#size").val();
+    console.log(sizeInput);
 
     toppingInputs.each(function() {
       toppingsArray.push($(this).val());
@@ -29,6 +36,10 @@ $(document).ready(function() {
 
     let pizzaPie = new Pizza (sizeInput, toppingsArray);
     console.log(pizzaPie);
+    let priceOutput = pizzaPie.calcPrice();
+    console.log(priceOutput);
+
+
 
   })
 });

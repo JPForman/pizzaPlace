@@ -10,6 +10,17 @@ _This website is developed to have the user input information about themselves i
 
 _Epicodus: Please grade the master branch. The testy branch is for experimentation and may be broken at the time of viewing :)_
 
+## Specs
+
+create prototype to generate cost
+
+create input of size and add to constructor
+
+display their order back to them
+
+display cost
+
+
 ## Setup
 
 * _Clone_

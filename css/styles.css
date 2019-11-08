@@ -1,3 +1,18 @@
 .title {
   text-align: center;
 }
+.size {
+  margin: 4px;
+}
+
+#submit {
+  margin: 4px;
+}
+
+.orderOutput {
+  display: none;
+}
+
+#jf {
+  opacity: 0;
+}
