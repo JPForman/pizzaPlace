@@ -10,34 +10,33 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1 class="title">Pizza is the Pizza of my Pizza</h1>
-
+    <div class="card">
+      <h1 class="topTitle">Pizza is the Pizza of my Pizza</h1>
     </div>
 
     <form id="orderForm">
 
       <div class="topping">
-        <h2>Select the goods!</h2>
+        <h2 class="title">Select the goods!</h2>
 
         <div class="column">
           <h3>Veggie Topings!</h3>
-          <input type="checkbox" name="pizzaTopping" value="mushrooms">Mushrooms<br>
-          <input type="checkbox" name="pizzaTopping" value="spinach">Spinach<br>
-          <input type="checkbox" name="pizzaTopping" value="garlic">Garlic<br>
-          <input type="checkbox" name="pizzaTopping" value="pineapple">Pineapple<br>
+          <input class="topping" type="checkbox" name="pizzaTopping" value="mushrooms"> Mushrooms<br>
+          <input class="topping" type="checkbox" name="pizzaTopping" value="spinach"> Spinach<br>
+          <input class="topping" type="checkbox" name="pizzaTopping" value="garlic"> Garlic<br>
+          <input class="topping" type="checkbox" name="pizzaTopping" value="pineapple"> Pineapple<br>
         </div>
         <div class="column">
           <h3>The Other Veggie Topings!</h3>
-          <input type="checkbox" name="pizzaTopping" value="broccoli">Broccoli<br>
-          <input type="checkbox" name="pizzaTopping" value="green chile">Green Chile<br>
-          <input type="checkbox" name="pizzaTopping" value="onion">Onion<br>
-          <input type="checkbox" name="pizzaTopping" value="tomato">Tomato<br>
+          <input type="checkbox" name="pizzaTopping" value="broccoli"> Broccoli<br>
+          <input type="checkbox" name="pizzaTopping" value="green chile"> Green Chile<br>
+          <input type="checkbox" name="pizzaTopping" value="onion"> Onion<br>
+          <input type="checkbox" name="pizzaTopping" value="tomato"> Tomato<br>
         </col>
       </div>
       <br>
 
-      <div class="size">
+      <div class="size card">
         <h2>What size za?</h2>
         <select class="form-control btn-success" id="size">
           <option>Small</option>
