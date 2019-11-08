@@ -16,19 +16,19 @@ function Order (size, parts) {
 
 
 $(document).ready(function() {
-  $("#testForm").submit(function(event) {
+  $("#orderForm").submit(function(event) {
     event.preventDefault();
-    let partInputs = $("input:checkbox[name=bikeThing]:checked");
-    let partArray = []
-    let sizeInput = "12"
+    let toppingInputs = $("input:checkbox[name=pizzaTopping]:checked");
+    let toppingsArray = []
+    // let sizeInput =
 
-    partInputs.each(function(partInput) {
-      partArray.push(partInput);
-      console.log(partArray);
+    toppingInputs.each(function(topping) {
+      toppingsArray.push(topping);
     })
-    let newOrder = new Order(sizeInput, partAray);
+    console.log(toppingsArray[1]);
+    // let newOrder = new Order (sizeInput, partAray);
 
-    console.log(newOrder);
+    // console.log(newOrder);
   })
 });
 
