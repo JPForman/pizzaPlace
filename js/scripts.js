@@ -36,43 +36,10 @@ $(document).ready(function() {
     let pizzaPie = new Pizza (sizeInput, toppingsArray);
     let priceOutput = pizzaPie.calcPrice();
 
-
+    $(".orderOutput").show();
+    $("#sizeOutput").text(pizzaPie.size);
+    $("#toppingsOutput").text(pizzaPie.toppings);
+    $("#costOutput").text(pizzaPie.price);
 
   })
 });
-
-
-
-    // let inputs = $("input:checkbox[name=bikeThing]:checked").each(function() {
-    //   let partsInput = $(this).val();
-    //
-    //   console.log(bikeParts)
-    //
-    // // let partsOrder = new PartsOrder(bikeparts)
-
-
-
-
-//
-
-
-//
-
-    //
-    // let sizeInput = other stuff
-    //
-    // bikeInputs.for each(function() {
-    //   bikeArray.push($(this).val());
-    //   console.log(bikeArray);
-    //   return bikeArray;
-    // });
-    //
-
-    // let bikeList = Bikeparts(bikeInput)
-
-    // testAray.push(testVar.name());
-
-
-//
-//   });
-// });
