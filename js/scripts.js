@@ -44,7 +44,11 @@ $(document).ready(function() {
 
     $(".orderOutput").show();
     $("#sizeOutput").text(pizzaPie.size);
-    $("#toppingsOutput").text(pizzaPie.toppings);
+    console.log(pizzaPie.toppings);
+    var toppingString = (pizzaPie.toppings).join(", ");
+    console.log(toppingString);
+    $("#toppingsOutput").text(toppingString);
+    // $("#toppingsOutput").text(pizzaPie.toppings);
     $("#costOutput").text(pizzaPie.price);
 
   })
