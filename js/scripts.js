@@ -1,7 +1,7 @@
-function Order (size, parts) {
+function Pizza (size, toppings) {
   this.size = size;
-  this.parts = parts;
-  this.price = 0;
+  this.toppings = toppings;
+  // this.price = 0;
 }
 
 
@@ -19,16 +19,17 @@ $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();
     let toppingInputs = $("input:checkbox[name=pizzaTopping]:checked");
-    let toppingsArray = []
-    // let sizeInput =
+    let toppingsArray = [];
+    let sizeInput = "small";
 
-    toppingInputs.each(function(topping) {
-      toppingsArray.push(topping);
+    toppingInputs.each(function() {
+      toppingsArray.push($(this).val());
+      console.log(toppingsArray);
     })
-    console.log(toppingsArray[1]);
-    // let newOrder = new Order (sizeInput, partAray);
 
-    // console.log(newOrder);
+    let pizzaPie = new Pizza (sizeInput, toppingsArray);
+    console.log(pizzaPie);
+
   })
 });
 
