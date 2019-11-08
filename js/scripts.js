@@ -1,19 +1,19 @@
 //Business Logic
 
 //Pizza Logic
-function Pizza (size, toppings, price) {
+function Pizza (size, toppings) {
   this.size = size,
   this.toppings = toppings,
-  this.price = "10"
-};
+  this.price = 10
+}
 
-Pizza.prototype.calcPrice = function() {
-  this.toppings.forEach(function() {
-    this.price += 5 ;
+Pizza.prototype.calcPrice = function(toppings) {
+  for (var i = 0; i < this.toppings.length; i++)
+    this.price += 3;
     console.log(this.price);
-  })
-  return this.price;
-};
+    return;
+  };
+
 
 
 
@@ -28,17 +28,13 @@ $(document).ready(function() {
     let toppingInputs = $("input:checkbox[name=pizzaTopping]:checked");
     let toppingsArray = [];
     let sizeInput = $("#size").val();
-    console.log(sizeInput);
 
     toppingInputs.each(function() {
       toppingsArray.push($(this).val());
-      console.log(toppingsArray);
     })
 
     let pizzaPie = new Pizza (sizeInput, toppingsArray);
     let priceOutput = pizzaPie.calcPrice();
-    console.log(pizzaPie);
-    console.log(priceOutput);
 
 
 
