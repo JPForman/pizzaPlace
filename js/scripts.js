@@ -4,18 +4,22 @@
 function Pizza (size, toppings) {
   this.size = size,
   this.toppings = toppings,
-  this.price = 10
+  this.price = 0
 }
 
-Pizza.prototype.calcPrice = function(toppings) {
+Pizza.prototype.calcToppings = function(toppings, size) {
   for (var i = 0; i < this.toppings.length; i++)
     this.price += 3;
-    console.log(this.price);
-    return;
   };
 
 
-
+Pizza.prototype.calcSize = function(size) {
+  if (this.size === "Small") {
+    this.price += 10;
+  } else {
+    this.price += 15;
+  }
+}
 
 
 
@@ -34,7 +38,9 @@ $(document).ready(function() {
     })
 
     let pizzaPie = new Pizza (sizeInput, toppingsArray);
-    let priceOutput = pizzaPie.calcPrice();
+    pizzaPie.calcToppings();
+    pizzaPie.calcSize();
+    console.log(pizzaPie);
 
     $(".orderOutput").show();
     $("#sizeOutput").text(pizzaPie.size);
