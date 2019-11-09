@@ -47,8 +47,7 @@ $(document).ready(function() {
     console.log(pizzaPie.toppings);
     var toppingString = (pizzaPie.toppings).join(", ");
     console.log(toppingString);
-    $("#toppingsOutput").text(toppingString);
-    // $("#toppingsOutput").text(pizzaPie.toppings);
+    $("#toppingsOutput").text(topping);
     $("#costOutput").text(pizzaPie.price);
 
   })

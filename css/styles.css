@@ -2,6 +2,10 @@ body {
   background-color: #D79D56;
 }
 
+.outputMessage {
+  font-size: 20px;
+
+}
 .column {
   float: left;
   width: 50%;
@@ -12,17 +16,24 @@ body {
 }
 .topping {
   font-size: 20px;
+  margin-top: 5px;
+  text-align: center;
+  background-color: #9D56D7;
+  /* padding-top: 1px; */
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 10%;
 }
 .topCard {
   background-color: #56D0D7;
+  border-radius: 25px;
 }
 .topTitle {
   font-size: 40px;
   text-align: center;
   background-color:
 }
-.title {
+.toppingTitle {
   text-align: center;
   font-size: 30px;
 }
@@ -37,7 +48,10 @@ body {
 }
 
 .orderOutput {
-  display: none;
+  /* display: none; */
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1px;
 }
 
 #jf {

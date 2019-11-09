@@ -14,10 +14,11 @@
       <h1 class="topTitle">Pizza is the Pizza of my Pizza</h1>
     </div>
 
-    <form id="orderForm">
+    <h3>Get the best pizza pie you have ever had in your life. It's just $10 for a small pizza, $15 for a large. Any additional toppings are $3 a piece. Enjoy!</h3>
 
+    <form id="orderForm">
       <div class="topping">
-        <h2 class="title">Select the goods!</h2>
+        <h2 class="toppingTitle">Select the goods!</h2>
 
         <div class="column">
           <h3>Veggie Topings!</h3>
@@ -51,11 +52,13 @@
 
   <div class="card bg-info orderOutput">
     <h2>Your Order</h2>
-    You ordered a <span id="sizeOutput"></span> pizza with the following toppings:<br>
-    <h3>cheese, marinara sauce, <span id="toppingsOutput"></span>.<br></h3>
-    That sounds super delicious.
-    The total cost comes to a meager: <br>
-    $<span id="costOutput"></span>
+    <div class="outputMessage">
+      <p>You ordered a <span class="returnOrder"id="sizeOutput"></span> pizza with the following toppings:<br>
+      <span class="returnOrder"id="toppingsOutput"></span>.<br>
+      That sounds super delicious.
+      The total cost comes to a meager: <br>
+      $<span class="returnOrder" id="costOutput"></span></p>
+      </div>
 
   </div>
 </div>
