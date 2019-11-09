@@ -40,14 +40,12 @@ $(document).ready(function() {
     let pizzaPie = new Pizza (sizeInput, toppingsArray);
     pizzaPie.calcToppings();
     pizzaPie.calcSize();
-    console.log(pizzaPie);
 
+    $("#orderForm").hide();
     $(".orderOutput").show();
     $("#sizeOutput").text(pizzaPie.size);
-    console.log(pizzaPie.toppings);
     var toppingString = (pizzaPie.toppings).join(", ");
-    console.log(toppingString);
-    $("#toppingsOutput").text(topping);
+    $("#toppingsOutput").text("cheese, marinara sauce, " + toppingString);
     $("#costOutput").text(pizzaPie.price);
 
   })
