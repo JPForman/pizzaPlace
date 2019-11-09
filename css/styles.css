@@ -1,12 +1,21 @@
+body {
+  background-color: #D79D56;
+}
+
 .column {
   float: left;
   width: 50%;
   border-style: solid;
   text-align: center;
   padding: 3%;
+  background-color: #5690D7;
 }
 .topping {
   font-size: 20px;
+  margin-top: 10%;
+}
+.topCard {
+  background-color: #56D0D7;
 }
 .topTitle {
   font-size: 40px;
@@ -18,7 +27,7 @@
   font-size: 30px;
 }
 .size {
-  margin-top: 20px;
+  margin-top: 30%;
   /* float: left; */
   text-align: center;
 }
