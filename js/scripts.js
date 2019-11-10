@@ -7,7 +7,7 @@ function Pizza (size, toppings) {
   this.price = 0
 }
 
-Pizza.prototype.calcToppings = function(toppings, size) {
+Pizza.prototype.calcToppings = function(toppings) {
   for (var i = 0; i < this.toppings.length; i++)
     this.price += 3;
   };
@@ -45,7 +45,7 @@ $(document).ready(function() {
     $("#sizeOutput").text(pizzaPie.size);
     var toppingString = (pizzaPie.toppings).join(", ");
     $("#toppingsOutput").text("cheese, marinara sauce, " + toppingString);
-    $("#costOutput").text(pizzaPie.price);
+    $("#costOutput").text("$" + pizzaPie.price);
 
   })
 });
