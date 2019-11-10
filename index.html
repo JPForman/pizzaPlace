@@ -15,7 +15,7 @@
       <h1 class="topTitle">Pominos</h1>
     </div>
     <div class="subTitle">
-      <h2>"Best Pizza Joint this side of the Willamette!"</h2>
+      <h2>"Best Pizza Joint This Side Of The Willamette!"</h2>
     </div>
     <div class="blurb">
       <h3 id=blurb>Get the best pizza pie you have ever had in your life.<br>$10 for a small cheese pizza, $15 for a large.<br>Any additional toppings are $3 a piece.<br><br>Click below to order online!</h3>
@@ -24,7 +24,7 @@
     <form id="orderForm">
       <div class="size card">
         <h2>What size za?</h2>
-        <select class="form-control btn-success" id="size">
+        <select class="form-control btn-lg btn-primary" id="size">
           <option>Small</option>
           <option>Large</option>
         </select>
@@ -34,25 +34,27 @@
 
       <div class="topping">
         <h2 class="toppingTitle">Select the goods!</h2>
+        <div class="row container">
 
-        <div class="column">
-          <h3>Veggie Topings!</h3>
-          <input class="topping" type="checkbox" name="pizzaTopping" value="mushrooms"> Mushrooms<br>
-          <input class="topping" type="checkbox" name="pizzaTopping" value="spinach"> Spinach<br>
-          <input class="topping" type="checkbox" name="pizzaTopping" value="garlic"> Garlic<br>
-          <input class="topping" type="checkbox" name="pizzaTopping" value="pineapple"> Pineapple<br>
+          <div class="column">
+            <h3>Veggie Topings!</h3>
+            <input class="topping" type="checkbox" name="pizzaTopping" value="mushrooms"> Mushrooms<br>
+            <input class="topping" type="checkbox" name="pizzaTopping" value="spinach"> Spinach<br>
+            <input class="topping" type="checkbox" name="pizzaTopping" value="garlic"> Garlic<br>
+            <input class="topping" type="checkbox" name="pizzaTopping" value="pineapple"> Pineapple<br>
+          </div>
+          <div class="column">
+            <h3>The Other Veggie Topings!</h3>
+            <input type="checkbox" name="pizzaTopping" value="broccoli"> Broccoli<br>
+            <input type="checkbox" name="pizzaTopping" value="green chile"> Green Chile<br>
+            <input type="checkbox" name="pizzaTopping" value="onion"> Onion<br>
+            <input type="checkbox" name="pizzaTopping" value="tomato"> Tomato<br>
+          </col>
         </div>
-        <div class="column">
-          <h3>The Other Veggie Topings!</h3>
-          <input type="checkbox" name="pizzaTopping" value="broccoli"> Broccoli<br>
-          <input type="checkbox" name="pizzaTopping" value="green chile"> Green Chile<br>
-          <input type="checkbox" name="pizzaTopping" value="onion"> Onion<br>
-          <input type="checkbox" name="pizzaTopping" value="tomato"> Tomato<br>
-        </col>
+        <button id="submit" type="submit" class="btn btn-info">Submit My Order!</button>
       </div>
       <br>
 
-      <button id="submit" type="submit" class="btn btn-info">Submit My Order!</button>
     </div>
   </form>
   <br>
@@ -61,14 +63,14 @@
     <h2>Your Order</h2>
     <div class="outputMessage">
       <p>You ordered a <span class="returnOrder" id="sizeOutput"></span> pizza with the following toppings:<br>
-      <span class="returnOrder" id="toppingsOutput"></span><br>
-      That sounds super delicious.
-      The total cost comes to a meager: <br>
-      $<span class="returnOrder" id="costOutput"></span></p>
+        <span class="returnOrder" id="toppingsOutput"></span><br>
+        That sounds super delicious.
+        The total cost comes: <br>
+        $<span class="returnOrder" id="costOutput"></span></p>
       </div>
 
+    </div>
   </div>
-</div>
-<p id="jf">jf</p>
+  <p id="jf">jf</p>
 </body>
 </html>

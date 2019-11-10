@@ -26,7 +26,8 @@ body {
   font-size: 20px;
   margin-top: 5px;
   text-align: center;
-  background-color: #9D56D7;
+  border: medium solid #5690D7;
+  /* background-color: #9D56D7; */
   /* padding-top: 1px; */
   /* padding-left: 10%;
   padding-right: 10%;
@@ -51,6 +52,9 @@ body {
 
   text-align: center;
 }
+#submit {
+  float: right;
+}
 .subTitle {
   font: arial black;
   text-align: center;
@@ -64,7 +68,6 @@ body {
   font: arial;
   color: blue;
   border: thick double #32a1ce;
-  padding: 10px;
   border-radius: 25px;
 }
 #blurb {
