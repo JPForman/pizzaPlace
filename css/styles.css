@@ -104,3 +104,17 @@ text-align: right;
 #jf {
   opacity: 0;
 }
+
+
+.footer {
+  position: fixed;
+  opacity: .7;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  line-height: 2px;
+}
