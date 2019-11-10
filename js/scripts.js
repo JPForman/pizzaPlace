@@ -25,7 +25,6 @@ Pizza.prototype.calcSize = function(size) {
 
 
 //UI Logic
-
 $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();

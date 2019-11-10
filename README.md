@@ -1,6 +1,6 @@
-# _The Worlds Most Accurate Programming Language Picker_
+# _Pominos Pizza_
 
-#### A website for determining the programming language that is best suited for the user.
+#### A website for ordering pizza.
 
 ###### By Joshua Forman
 
