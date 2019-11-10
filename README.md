@@ -6,19 +6,25 @@
 
 ## Description
 
-_This website is developed to have the user input information about themselves in order for a branching script to determine their optimal programming language, then report the findings to the user._
-
-_Epicodus: Please grade the master branch. The testy branch is for experimentation and may be broken at the time of viewing :)_
+_This website is developed to allow the user to select size of pizza and topping, then return their order with the price calculated accurately._
 
 ## Specs
+_The program will return items selected from a checklist._
+* ExI: Select Mushrooms and Green Chile  
+* ExO: print "Mushrooms, Green Chile"_
 
-create prototype to generate cost
+_The program will return size of pizza from a dropdown as well as items selected from a checklist._  
+* ExI: Select Small with Mushrooms and Green Chile  
+* ExO: print "Small with Mushrooms, Green Chile"
 
-create input of size and add to constructor
+_The program will return price of a pizza based on number of toppings._  
+* ExI: Select pizza with Mushrooms and Green Chile  
+* ExO: print "$16"
 
-display their order back to them
+_The program will return price of a pizza based on size and number of toppings._  
+* ExI: Select large pizza with Mushrooms and Green Chile  
+* ExO: print "$21"
 
-display cost
 
 
 ## Setup
@@ -28,11 +34,11 @@ display cost
 
 or
 
-* _go to https://github.com/JPForman/ProgrammingLanguageSelector.git_
+* _go to https://github.com/JPForman/pizzaPlace.git
 
 ## Known Bugs
 
-_more branching desired for developed functionality and specificity_
+_More options desired for appetizers with differing prices._
 
 ## Support and contact details
 
